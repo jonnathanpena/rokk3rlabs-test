@@ -6,12 +6,14 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { NavegationComponent } from './navegation/navegation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavegationComponent
   ],
   imports: [
     BrowserModule,
