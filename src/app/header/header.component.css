@@ -1,0 +1,26 @@
+button.navbar-toggle{
+    float: left;
+}
+
+nav{
+    background-color: #2f323a;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    padding-right: 45px; 
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.36;
+    color: #ffffff;
+}
+
+img{
+    width: 169px;
+    height: 20px;
+    object-fit: contain;
+}
+
+div.navbar-header a.navbar-brand{
+    width: 264px;
+    background-color: #1e2025;
+}
