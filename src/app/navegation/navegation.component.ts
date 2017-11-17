@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnalitycsComponent  } from '../analitycs/analitycs.component';
 
 @Component({
   selector: 'navegation',

@@ -7,13 +7,15 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavegationComponent } from './navegation/navegation.component';
+import { AnalitycsComponent  } from './analitycs/analitycs.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavegationComponent
+    NavegationComponent,
+    AnalitycsComponent
   ],
   imports: [
     BrowserModule,
