@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { ChartsModule } from 'ng2-charts';
 
 
 import { AppComponent } from './app.component';
@@ -15,11 +16,12 @@ import { AnalitycsComponent  } from './analitycs/analitycs.component';
     AppComponent,
     HeaderComponent,
     NavegationComponent,
-    AnalitycsComponent
+    AnalitycsComponent    
   ],
   imports: [
     BrowserModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
