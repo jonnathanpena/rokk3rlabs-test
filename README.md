@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
 AngularCli 5.0.1
 
-##Development install
+## Development install
 
 Run `npm install`
 
@@ -31,7 +31,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-##Descripción del proyecto
+## Descripción del proyecto
 
 El proyecto se creó en Angular 5.0.1, debido que las dependencias de otros módulos están generando conflictos con Angular 4, pueden ingresar al Package.json y verifican la información.
 1.- Instalé el proyecto en Angular 5.
@@ -42,6 +42,6 @@ El proyecto se creó en Angular 5.0.1, debido que las dependencias de otros mód
 6.- Utilicé git como repositorio, bajo un proyecto público.
 7.- La herramienta gitKraken (para mi), es la mejor herramienta para trabajar con repositorios externos, debido que facilita los merge, puedes trabajar con branch para cada etapa de un proyecto y te permite evaluar los conflictos que se producen en los Merge de manera gráfica, la recomiendo.
 
-##Resumen
+## Resumen
 Se me agotó el tiempo y entrego legalmente justo a las 4 horas que me exigen, si tuviera más tiempo, haría lo demás. Perdonen, espero su respuesta. Gracias!!
 
