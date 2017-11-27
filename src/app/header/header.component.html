@@ -1,26 +1,26 @@
-<nav class="navbar navbar-inverse navbar-fixed-top normal" role="navigation">
-    
-        <div class="">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <img class="img-responsive" src="./assets/images/r-3-l-logo-application-02.png" alt="">
-            </a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>            
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-  
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#contact">Jonnathan Peña <fa name="cog" animation="spin" style="width: 16px;
-                height: 16px" ></fa></a>
-              </li>
-            </ul>
-          </div>
-          <!--/.nav-collapse -->
-        </div>
-        <!--/.contatiner -->
-      </nav>
+<div class="rl-header">
+  <div class="rl-header-left">
+    <a id="naviconLeft" (click)="colapse()" class="rl-logo"> 
+      <img src="assets/images/r-3-l-logo-application-02.png"
+            srcset="assets/images/r-3-l-logo-application-02@2x.png 2x,
+            assets/images/r-3-l-logo-application-02@3x.png 3x"
+            class="analitycs"> </a>
+  </div><!-- rl-header-left -->
+
+  <div class="rl-header-right">
+    <div class="dropdown dropdown-profile">
+      <a class="nav-link nav-link-profile" data-toggle="dropdown">
+        <span class="logged-name"><span class="">Admin Name</span> 
+        <img src="assets/images/shape.png"
+             class="analitycs">
+      </span>
+      </a>
+      <div class="dropdown-menu wd-200">
+        <ul class="list-unstyled user-profile-nav">
+          <li><a href=""> Edit Profile</a></li>
+          <li><a href=""> Sign Out</a></li>
+        </ul>
+      </div><!-- dropdown-menu -->
+    </div><!-- dropdown -->
+  </div><!-- rl-header-right -->
+</div><!-- rl-header -->

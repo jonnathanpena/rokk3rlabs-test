@@ -7,17 +7,22 @@ import 'rxjs/add/operator/toPromise';
 export class AnalitycsService {
 
   constructor(private http: HttpClient) {  }
-  
-  private extractData(res: any) {
-    let body = res;
-    console.log(body.data);
-    return body.data || {};
+
+	private handleError(error: any): Promise<any> {
+		console.log('Error al leeer la data', error);
+		return Promise.reject(error.message || error);
   }
+  
+	private extractData(res: any) {
+		let body = res;
+		return body;
+	}
 
   getData() {
-    return this.http.get < any > ('../assets/data/activity-data.json')
+    return this.http.get<any>('../assets/data/activity-data.json')
       .toPromise()
-      .then(this.extractData);
+      .then(resp => this.extractData(resp))
+      .catch(this.handleError);
   }
 
 }

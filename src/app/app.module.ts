@@ -1,5 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { NgRedux, NgReduxModule } from 'ng2-redux';
+import { IAppStore, appReducer, INITIAL_STATE } from './app.reducer';
+
+import { AppRoutingModule } from './app.routing';
 
 import { AnalitycsService } from './analitycs/analitycs.service';
 
@@ -11,6 +19,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavegationComponent } from './navegation/navegation.component';
 import { AnalitycsComponent  } from './analitycs/analitycs.component';
+import { NewsComponent } from './news/news.component';
 
 
 @NgModule({
@@ -18,16 +27,26 @@ import { AnalitycsComponent  } from './analitycs/analitycs.component';
     AppComponent,
     HeaderComponent,
     NavegationComponent,
-    AnalitycsComponent    
+    AnalitycsComponent,
+    NewsComponent    
   ],
   imports: [
     BrowserModule,
     AngularFontAwesomeModule,
-    ChartsModule
+    ChartsModule,
+    HttpModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    NgReduxModule
   ],
   providers: [
     AnalitycsService
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(ngRedux: NgRedux<IAppStore>){
+    ngRedux.configureStore(appReducer, INITIAL_STATE)
+  }
+}

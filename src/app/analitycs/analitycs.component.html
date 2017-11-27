@@ -1,11 +1,64 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-10">
-            <div class="panel-1">
-                
-                    
+<div class="rl-mainpanel">
+    <div class="rl-pagebody">
+      <div class="row row-sm">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header bg-white pd-20">
+              <h4 class="card-title tx-15 mg-b-0 tx-primary ">Speed Zones
 
+               <img src="assets/images/info-ico.png"
+               class="pull-right ml-xl-3">
+              <img src="assets/images/resize.png"
+               class="pull-right">
+             </h4>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="grafica1" style="height: 262px;">
+                <canvas
+                baseChart 
+                [chartType]="'line'"
+                [datasets]="chartData"
+                [labels]="chartLabels"
+                [options]="chartOptions"
+                [legend]="true"
+                (chartClick)="onChartClick($event)">
+            </canvas>
+            </div>
+          </div><!-- card -->
+        </div><!-- col-12 -->
+      </div><!-- row -->
+
+      <div class="row row-sm py-xl-4 pd-t-10">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header bg-white pd-20">
+              <h4 class="card-title tx-15 mg-b-0 tx-primary ">Count by zones</h4>
+            </div>
+            <div class="grafica2" style="height: 262px;">
+                <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="chartOptions"
+                [legend]="true"
+                [chartType]="'bar'"></canvas>
+            </div>
+          </div><!-- card -->
+        </div><!-- col-8 -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header bg-white pd-20">
+              <h4 class="card-title tx-15 mg-b-0 tx-primary text-center">Speed Average</h4>
+            </div>
+            <div class="grafica3" style="height: 262px;">
+                <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="'doughnut'"
+                [options]="chartOptions"></canvas>
+            </div>
+          </div><!-- card -->
+        </div><!-- col-4 -->
+      </div><!-- row -->
+
+    </div><!-- rl-pagebody -->
+
+  </div><!-- rl-mainpanel -->
